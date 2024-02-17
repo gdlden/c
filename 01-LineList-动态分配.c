@@ -29,7 +29,7 @@ int main(int argc, char const *argv[])
 {
     SeqList L;
     InitList(&L);
-    printf("初始化后L的最大容量：%d\n",L.MaxSize);
+    printf("初始化后L的最大容量是：%d\n",L.MaxSize);
     IncreaseSize(&L,5);
     printf("扩容后L的最大容量:%d\n",L.MaxSize);
     /* code */

@@ -66,7 +66,7 @@ int main(int argc, char const *argv[])
 {
     SeqList L;
     InitList(&L);
-    printf("扩容前的容量是：%d,长度是：%d\n", L.MaxSize, L.length);
+    printf("扩容前的容量是多少呢：%d,长度是：%d\n", L.MaxSize, L.length);
     IncreaseList(&L, size);
     printf("扩容后的容量是：%d,长度是：%d\n", L.MaxSize, L.length);
     
@@ -99,7 +99,7 @@ int main(int argc, char const *argv[])
     printf("---------删除了，看一下-------------\n");
     for ( int i = 0; i < L.MaxSize; i++)
     {
-        printf("%d:%d\n",i,L.data[i]);
+        printf("%d:222333%d\n",i,L.data[i]);
     }
 
     return 0;
