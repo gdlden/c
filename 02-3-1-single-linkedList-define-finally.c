@@ -55,6 +55,9 @@ int Empty(LinkList L) {
 }
 int main(int argc, char const *argv[])
 {
+    LNode L;
+    InitList(L);
+    printf("%d",Empty(&L));
     printf("222233333333333333-----------------\n");
     system("pause");
     return 0;
