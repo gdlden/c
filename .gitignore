@@ -1,4 +1,4 @@
 build
 .idea
-./output
+/output
 /.vscode/
