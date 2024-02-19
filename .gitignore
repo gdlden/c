@@ -1,7 +1,4 @@
-/01-LineList-Insert
-/01-LineList-Insert.dSYM
-/01-LineList-动态分配
-/01-testLineList-静态分配
-/a.out
-/build
-/.vscode
+build
+.idea
+./output
+/.vscode/
