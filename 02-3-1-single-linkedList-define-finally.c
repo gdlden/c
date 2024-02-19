@@ -2,12 +2,12 @@
 #include<stdlib.h>
 
 /**
- * 
+ * 不带头节点的单链表初始化，判空，获取指定位置元素
  * 
  * 
  * */
 
-//定义结构体积，作为链表的每一个节点的数据结构
+//定义链表结构体，作为链表的每一个节点的数据结构
 typedef struct LNode
 {
     //数据域，保存该节点的数据
@@ -25,6 +25,15 @@ LNode* GetElem(LinkList L,int i) {
     //
     if(i==0) {
         return L;
+    }
+    int count = 1;
+    while (L->next!=NULL)
+    {
+        if(count==i) {
+            return L;
+        }
+        L = L->next;
+        count++;
     }
 
 }
