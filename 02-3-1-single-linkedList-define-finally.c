@@ -60,7 +60,6 @@ BOOL Empty(LinkList L) {
 int main(int argc, char const *argv[])
 {
     LinkList L;
-    
     //由于初始化函数需要更改链表的值，因此应该传入该链表的地址
     InitList(&L);
     //这里打印看下初始化之后该单链表是否初始化成功
