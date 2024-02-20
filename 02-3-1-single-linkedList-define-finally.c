@@ -21,7 +21,7 @@ typedef struct LNode
     struct LNode* next;
 }LNode,*LinkList;
 
-//获取给定链表中的第i个节点
+//获取表L中第i个位置的节点
 LNode* GetElem(LinkList L,int i) {
     //根据传入i的范围来选择，小于零，非法，返回null
     if(i<0) {
