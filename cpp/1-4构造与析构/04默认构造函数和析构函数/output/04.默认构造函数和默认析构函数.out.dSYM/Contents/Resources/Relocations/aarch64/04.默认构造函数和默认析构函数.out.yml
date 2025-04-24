@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/hukss/code/c/04默认构造函数和析构函数/output/04.默认构造函数和默认析构函数.out"
+relocations:     []
+...
