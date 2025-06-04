@@ -1,28 +1,29 @@
 #include<iostream>
 using namespace std;
-class Printer {
+class MPrinter {
     private:
-    static int printCount;
-    static Printer *pPrinter;
-    Printer() {
+        static int printCount;
+        static MPrinter *pPrinter;
+        MPrinter() {
         printCount = 0;
         cout << "Printer created." << endl;
-    }
-    Printer(const Printer&) {
-        cout << "Copy constructor called." << endl;
-    }
+            }
+        MPrinter(const MPrinter&) {
+            cout << "Copy constructor called." << endl;
+        }
     
     public:
-    static Printer* getPrinter() {
+        static MPrinter* getPrinter() {
         printCount++;
         cout << "Print count: " << printCount << endl;
         return pPrinter;
     }
 };
-Printer *Printer::pPrinter = new Printer;
+MPrinter *MPrinter::pPrinter = new MPrinter;
+int MPrinter::printCount = 0;
 int main() {
-    Printer *printer1 = Printer::getPrinter();
-    Printer *printer2 = Printer::getPrinter();
-    Printer *printer3 = Printer::getPrinter();
+    MPrinter *printer1 = MPrinter::getPrinter();
+    MPrinter *printer2 = MPrinter::getPrinter();
+    MPrinter *printer3 = MPrinter::getPrinter();
     return 0;
 }
